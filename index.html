@@ -1,0 +1,707 @@
+﻿<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+   <title>decima aplicacion</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/tema10.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+
+  <script type="text/javascript">
+  
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/MINI-White.jpg','imagenes/images.jpg','imagenes/celular6.jpg','imagenes/celular7.png','imagenes/conflicto-batalla.png','imagenes/monumentos.jpg','imagenes/5 DE MAYO.jpg','imagenes/NUESTRO-PLANETA.jpg','imagenes/QUE_ES_LA_BIODIVERSIDAD.jpg','imagenes/AMBIENTE.jpg','imagenes/conciencia_ecologica.jpg','imagenes/CONCIENCIA_ECOLOGICA2.jpg','imagenes/CUIDADO_DEL_MEDIO_AMBIENTE.jpg','imagenes/tres.jpg','imagenes/sustentabilidad2.jpg')">
+
+   <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="b">
+     <h1>DIA MUNDIAL DE LA TIERRA</h1>
+      </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/22demayo.jpg" alt="22-DE-MAYO" title="22-DE-MAYO" id="wows1_0"/></li>
+		<li><img src="data1/images/biodiversidad.jpg" alt="BIODIVERSIDAD" title="BIODIVERSIDAD" id="wows1_1"/></li>
+		<li><img src="data1/images/conciencia_ecologica.jpg" alt="conciencia_ecologica" title="conciencia_ecologica" id="wows1_2"/></li>
+		<li><img src="data1/images/conciencia_ecologica2.jpg" alt="CONCIENCIA_ECOLOGICA2" title="CONCIENCIA_ECOLOGICA2" id="wows1_3"/></li>
+		<li><img src="data1/images/concienciaecologica.jpg" alt="CONCIENCIA-ECOLOGICA" title="CONCIENCIA-ECOLOGICA" id="wows1_4"/></li>
+		<li><img src="data1/images/cuidado_de_los_seres_vivos.jpg" alt="CUIDADO_DE_LOS_SERES_VIVOS" title="CUIDADO_DE_LOS_SERES_VIVOS" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/cuidado_del_medio_ambiente.jpg" alt="jquery carousel" title="CUIDADO_DEL_MEDIO_AMBIENTE" id="wows1_6"/></a></li>
+		<li><img src="data1/images/dia_de_la_biodiversidad.jpg" alt="DIA_DE_LA_BIODIVERSIDAD" title="DIA_DE_LA_BIODIVERSIDAD" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="22-DE-MAYO"><span><img src="data1/tooltips/22demayo.jpg" alt="22-DE-MAYO"/>1</span></a>
+		<a href="#" title="BIODIVERSIDAD"><span><img src="data1/tooltips/biodiversidad.jpg" alt="BIODIVERSIDAD"/>2</span></a>
+		<a href="#" title="conciencia_ecologica"><span><img src="data1/tooltips/conciencia_ecologica.jpg" alt="conciencia_ecologica"/>3</span></a>
+		<a href="#" title="CONCIENCIA_ECOLOGICA2"><span><img src="data1/tooltips/conciencia_ecologica2.jpg" alt="CONCIENCIA_ECOLOGICA2"/>4</span></a>
+		<a href="#" title="CONCIENCIA-ECOLOGICA"><span><img src="data1/tooltips/concienciaecologica.jpg" alt="CONCIENCIA-ECOLOGICA"/>5</span></a>
+		<a href="#" title="CUIDADO_DE_LOS_SERES_VIVOS"><span><img src="data1/tooltips/cuidado_de_los_seres_vivos.jpg" alt="CUIDADO_DE_LOS_SERES_VIVOS"/>6</span></a>
+		<a href="#" title="CUIDADO_DEL_MEDIO_AMBIENTE"><span><img src="data1/tooltips/cuidado_del_medio_ambiente.jpg" alt="CUIDADO_DEL_MEDIO_AMBIENTE"/>7</span></a>
+		<a href="#" title="DIA_DE_LA_BIODIVERSIDAD"><span><img src="data1/tooltips/dia_de_la_biodiversidad.jpg" alt="DIA_DE_LA_BIODIVERSIDAD"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+      <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>22 de Abril Día Mundial de la Tierra</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	     <center>
+	       <img src="imagenes/DIA_DE_LA_TIERRA.jpg" width="30%" height="30%"><img src="imagenes/DIA_MUNDIAL_DE_LA_TIERRA.jpg" width="30%" height="30%">
+	     </center> </div>
+	   </div>
+	   </div>
+	   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+         <h1>22 de Mayo Día Internacional de la Biodiversidad</h1>
+       <div>
+       <br>
+       </div>
+        <div>
+          <center>
+            <img src="imagenes/DIA_DE_LA_BIODIVERSIDAD.jpg" width="30%" height="30%"><img src="imagenes/DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD.jpg" width="30%" height="30%">
+         </center> </div>
+       </div>
+      </div>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Conciencia Ecológica</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	     <center>
+	       <img src="imagenes/conciencia_ecologica.jpg" width="30%" height="30%"><img src="imagenes/CONCIENCIA-ECOLOGICA.jpg" width="30%" height="30%">
+	     </center> </div>
+	   </div>
+	   </div>
+     <div>
+       <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>ANTECEDENTES DE LA TIERRA</h2>
+          </a>
+       </li>   
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>¿QUE ES LA BIODIVERSIDAD?</h2>
+          </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>CUIDADO DEL MEDIO AMBIENTE</h2>
+           </a>
+        </li>
+        <li class="ui-fir ui-last-child">
+           <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>RECOMENDACIONES PARA CREAR CONCIENCIA ECOLÓGICA POR EL BIEN DE LA TIERRA </h2>
+           </a>
+        </li>
+<li class="ui-fir ui-last-child">
+           <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>DATOS DEL AUTOR </h2>
+           </a>
+       
+        </li>
+       </ul>
+<br>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/dia_de_la_tierra.jpg" alt="DIA_DE_LA_TIERRA" title="DIA_DE_LA_TIERRA" id="wows2_0"/></li>
+		<li><img src="data2/images/dia_internacional_biodiversidad.png" alt="DIA_INTERNACIONAL_BIODIVERSIDAD" title="DIA_INTERNACIONAL_BIODIVERSIDAD" id="wows2_1"/></li>
+		<li><img src="data2/images/dia_internacional_de_la_biodiversidad.jpg" alt="DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD" title="DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD" id="wows2_2"/></li>
+		<li><img src="data2/images/dia_mundial_de_la_tierra.jpg" alt="DIA_MUNDIAL_DE_LA_TIERRA" title="DIA_MUNDIAL_DE_LA_TIERRA" id="wows2_3"/></li>
+		<li><img src="data2/images/nuestro_planeta.jpg" alt="NUESTRO_PLANETA" title="NUESTRO_PLANETA" id="wows2_4"/></li>
+		<li><img src="data2/images/nuestroplaneta.jpg" alt="NUESTRO-PLANETA" title="NUESTRO-PLANETA" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/salvemos_al_planeta.jpg" alt="wow slider" title="SALVEMOS_AL_PLANETA" id="wows2_6"/></a></li>
+		<li><img src="data2/images/tierra_dia_mundial.jpg" alt="tierra_dia_mundial" title="tierra_dia_mundial" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="DIA_DE_LA_TIERRA"><span><img src="data2/tooltips/dia_de_la_tierra.jpg" alt="DIA_DE_LA_TIERRA"/>1</span></a>
+		<a href="#" title="DIA_INTERNACIONAL_BIODIVERSIDAD"><span><img src="data2/tooltips/dia_internacional_biodiversidad.png" alt="DIA_INTERNACIONAL_BIODIVERSIDAD"/>2</span></a>
+		<a href="#" title="DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD"><span><img src="data2/tooltips/dia_internacional_de_la_biodiversidad.jpg" alt="DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD"/>3</span></a>
+		<a href="#" title="DIA_MUNDIAL_DE_LA_TIERRA"><span><img src="data2/tooltips/dia_mundial_de_la_tierra.jpg" alt="DIA_MUNDIAL_DE_LA_TIERRA"/>4</span></a>
+		<a href="#" title="NUESTRO_PLANETA"><span><img src="data2/tooltips/nuestro_planeta.jpg" alt="NUESTRO_PLANETA"/>5</span></a>
+		<a href="#" title="NUESTRO-PLANETA"><span><img src="data2/tooltips/nuestroplaneta.jpg" alt="NUESTRO-PLANETA"/>6</span></a>
+		<a href="#" title="SALVEMOS_AL_PLANETA"><span><img src="data2/tooltips/salvemos_al_planeta.jpg" alt="SALVEMOS_AL_PLANETA"/>7</span></a>
+		<a href="#" title="tierra_dia_mundial"><span><img src="data2/tooltips/tierra_dia_mundial.jpg" alt="tierra_dia_mundial"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<br>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+        <div>
+         <img src="res/android/mdpi.png" width="76" height="69" alt="icono"> </div>
+        <div>
+          <h4>CUIDEMOS EL PLANETA</h4>
+        </div>
+</div>
+        </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+           <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+             <h1>ANTECEDENTES DE LA TIERRA</h1>
+           </div>
+           <br>
+           <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	     <center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/NUESTRO-PLANETA.jpg',1)"><img src="imagenes/NUESTRO_PLANETA.jpg" width="30%" height="30%" id="Image38"></a>
+</center> </div>
+	   </div>
+	   </div>
+
+           <div data-role="content" align="center">
+             <div>
+               <h2>La Tierra y sus ecosistemas son nuestro hogar. Para alcanzar un justo equilibrio entre las necesidades económicas, sociales y ambientales de las generaciones presentes y futuras, es necesario promover la armonía con la naturaleza y el planeta.
+
+La Asamblea General, reconociendo que «Madre Tierra» es una expresión común utilizada para referirse al planeta en diversos países y regiones, lo que demuestra la interdependencia existente entre los seres humanos, las demás especies vivas y el globo terráqueo, y observando que en numerosos países ya se celebraba anualmente el Día de la Tierra, decidió designar el 22 de abril Día Internacional de la Madre Tierra en su resolución A/RES/63/278 Documento PDF, aprobada en 2009.
+
+Invita a todos los Estados Miembros, las organizaciones del sistema de las Naciones Unidas, las organizaciones internacionales, regionales y subregionales, la sociedad civil, las organizaciones no gubernamentales y las partes interesadas a observar el Día Internacional de la Madre Tierra y crear conciencia al respecto, según proceda.
+<br>
+<br>
+<center><img src="imagenes/SALVEMOS_AL_PLANETA.jpg" width="30%" height="30%"></center>
+<br>
+El 22 de abril se celebra el Día Internacional de la Tierra. Se instauró para crear una conciencia común a los problemas medioambientales como la superpoblación, la producción de contaminación o la conservación de la biodiversidad. Su objetivo es subrayar la importancia del uso responsable de los recursos naturales de la Tierra  así como  de una educación ambiental.
+
+El 22 de abril de 1970, el senador y activista ambiental Gaylord Nelson realizó la primera manifestación en favor de la creación de una agencia ambiental. Participaron miles de universidades, escuelas primarias y secundarias, además de cientos de comunidades. La presión social tuvo sus logros y el gobierno de Estados Unidos creó la Agencia de Protección Ambiental (Environmental Protection Agency) y proclamó una serie de leyes destinadas a la protección del medio ambiente.
+
+Las Naciones Unidas reconocen que la Tierra y sus ecosistemas son el hogar de la humanidad. Asimismo, afirman que para alcanzar un justo equilibrio entre las necesidades económicas, sociales y ambientales de las generaciones presentes y futuras es necesario promover la armonía con la naturaleza y la Tierra. Es por esto que se decidió designar el 22 de Abril como el “Día Internacional de la Madre Tierra”.
+
+Desde el INTEF destacamos algunos de los recursos y páginas de interés para desarrollar el tema en las aulas.</h2>
+             </div>
+             <center>
+               <img src="imagenes/tierra_dia_mundial.jpg" width="30%" height="30%"><img src="imagenes/descarga.jpg" width="30%" height="30%">
+             </center>
+       </div>
+        <div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="https://hipertextual.com/2015/04/dia-de-la-tierra-2015" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               <li class="ui-first-child ui-last-child">
+               <a href="http://www.ine.gov.ve/index.php?option=com_content&view=article&id=110:22-de-abril-dia-mundial-de-la-tierra&Itemid=48" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </ul>
+               </div>
+       <div data-role="footer" data-theme="a" data-position="fixed">
+             <h4>Aplicación Diez, ETB</h4>
+       </div>
+        
+           </div>
+          
+           </div>
+</div>
+         
+         
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>¿Qué es la biodiversidad?</h1>
+        </div>
+<br>
+<br>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	    <center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image54','','imagenes/QUE_ES_LA_BIODIVERSIDAD.jpg',1)"><img src="imagenes/CUIDAR_EL_MEDIO_AMBIENTE.jpg" width="30%" height="30%" id="Image54"></a>
+</center> </div>
+	   </div>
+	   </div>
+
+
+        <div data-role="content" align="center">
+          <div>
+            <h2>La diversidad biológica, o biodiversidad, es el término por elque se hace referencia a la amplia variedad de seres vivos sobre la Tierra y los patrones naturales que conforma. La diversidad biológica que observamos hoy es el fruto de miles de millones de años de evolución, moldeada por procesos naturales y, cada vez más, por la influencia del ser humano. Esta diversidad forma la red vital de la cual somos parte integrante y de la cual tanto dependemos.
+
+Con frecuencia, se entiende por diversidad la amplia variedad de plantas, animales y microorganismos existentes. Hasta la fecha, se han identificado unos 1,75 millones de especies, en su mayor parte criaturas pequeñas, por ejemplo, insectos. Los científicos reconocen que en realidad hay cerca de 13 millones de especies, si bien las estimaciones varían entre 3 y 100 millones.
+
+La diversidad biológica incluye también las diferencias gen”ticas dentro de cada especie, por ejemplo, entre las variedades de cultivos y las razas de ganado. Los cromosomas, los genes y el ADN, es decir, los componentes vitales, determinan la singularidad de cada individuo y de cada especie.
+
+Otro aspecto adicional de la diversidad biológica es la variedad de ecosistemas, por ejemplo, los que se dan en los desiertos, los bosques, los humedales, las montañas, los lagos, los ríos y paisajes agrícolas. En cada ecosistema, los seres vivos, entre ellos, los seres humanos, forman una comunidad, interactúan entre sí, asi como con el aire, el agua y el suelo que les rodea.
+
+Es esta combinación de formas de vida y sus interacciones mutuas y con el resto del entorno que ha hecho de la Tierra un lugar habitable y único para los seres humanos. La diversidad biológica ofrece un gran número de bienes y servicios que sustentan nuestra vida.
+</h2></div>
+        </div>
+<br>
+<br>
+<center>
+  <img src="imagenes/BIODIVERSIDAD.jpg" width="30%" height="30%"><img src="imagenes/DIA_INTERNACIONAL_DE_LA_BIODIVERSIDAD.jpg" width="30%" height="30%">
+</center>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>¿Qué es la sustentabilidad?</h2>
+          </a>
+       </li>   
+       </ul> 
+       <div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://www.cricyt.edu.ar/enciclopedia/terminos/Biodiver.htm" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div>     
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+        </div>
+        </div>
+</div>
+
+   
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>CUIDADO DEL MEDIO AMBIENTE</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	   <center>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','imagenes/conciencia_ecologica.jpg',1)"><img src="imagenes/DIA_DE_LA_TIERRA.jpg" width="30%" height="30%" id="Image53"></a>
+</center> </div>
+	   </div>
+	   </div>
+
+         <div data-role="content" align="center">
+<h2> La palabra medio ambiente proviene del latín “medius” y “ambiens”, las que en conjunto se enfocan hacia el concepto de “lo que está a ambos lados”.
+
+El concepto de medio ambiente, según la teoría general de sistemas, hace referencia a los muchos factores externos que modifican un sistema, determinando así el curso y forma de su existencia. Los sistemas se pueden encontrar dentro de los ambientes, como si se tratara del subconjunto de un conjunto anterior, por ejemplo. Es tan compleja y diversa la acepción de medio ambiente, que se puede subdividir superficialmente entre “ambiente físico”, “ambiente biológico” y “ambiente socioeconómico”.
+</h2>
+<center>
+  <img src="imagenes/cuidado.jpg" width="30%" height="30%">
+</center>
+<br>
+<div>
+               <h2>Consejos para cuidar el medio ambiente.
+Ahorro de energía en el hogar:
+
+Reemplazar los filtros de aire acondicionado en el hogar por lo menos una vez al mes
+Bajar el termostato del calentador de agua a 120
+Apagar las luces de las habitaciones que no se van a utilizar
+Ajustar la temperatura del refrigerador a 36º o 38º y el congelador de 0º a 5º
+Comprar electrodomésticos que dispongan de una certificación de ahorro energético
+Usar bombillas fluorescentes compactas para ahorrar energía
+Reducir la toxicidad en el hogar:
+
+Eliminar el mercurio en la casa mediante la compra de elementos que no lo posean o lo hagan en una dosis muy baja
+Utilizar artículos de limpieza que no contengan un alto nivel de químicos peligrosos
+Revisar las etiquetas de los productos de limpieza, considerando el uso de bicarbonato de sosa, entre otros del mismo tipo
+Hacer la casa a prueba de roedores y evitar usar veneno de ratón, prefiriendo trampas en cualquier caso
+Cuidado en la oficina:
+
+Hacer copias en ambas caras del papel
+Reutilizar sobres, carpetas y clips
+Usar un tablón de anuncios en vez de enviar correo a cada empleado
+Priorizar el uso de correo electrónico en vez de usar en correo convencional
+</h2>
+<br>
+<center>
+  <img src="imagenes/medio-ambiente.jpg" width="30%" height="30%">
+</center>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Consejos para el cuidado del medio ambiente</h2>
+          </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+          <a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+             <h2>Importancia del reciclaje</h2>
+          </a>
+       </li>           
+       </ul> 
+       <div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://html.rincondelvago.com/cuidado-del-medio-ambiente.html" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div>               
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>¿Qué es la sustentabilidad?</h1>
+          
+        </div>
+        <br>
+         <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	  <center>
+      <center>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image68','','imagenes/sustentabilidad2.jpg',1)"><img src="imagenes/sustentabilidad.jpg" width="30%" height="30%" id="Image68"></a>
+        </center></div>
+	   </div>
+	   </div>
+       
+<h2> La sustentabilidad ambiental no es nada más que el uso racional de los recursos naturales, de manera tal que sea posible mejorar el bienestar de la población actual sin comprometer la calidad de vida de las generaciones futuras. Un ejemplo de ello sería los calentadores solares, los cuales ya están siendo utilizados en varios hogares del país.
+
+Otra de las prácticas que hemos visto en los últimos años, y de la cual ya les hemos hablado anteriormente, es el uso de la tecnología LED; una forma de iluminar, ahorrar y no dejar huellas negativas en el medio ambiente. Los LED son pequeños, resistentes, no contaminantes y perfectos para formar parte de una iluminación que, además, sea un diseño sustentable.
+
+Para comprender mejor la importancia de usar eficientemente los recursos, en este caso la energía eléctrica, me valdré de la siguiente cifra: se estima que solamente la iluminación es responsable del 19% de la energía mundial y causante de 6% de las emisiones globales de gases de efecto invernadero. En base a estos datos, si se tomara conciencia de la necesidad de duplicar la eficiencia en la iluminación a nivel mundial los resultados serían magníficos: ahorrar 670 millones de toneladas de emisiones de gases de efecto invernadero cada año.
+</h2>
+<br>
+<center>
+  <img src="imagenes/sus.jpg" width="30%" height="30%">
+</center>
+<div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://www.sustentabilidad.uai.edu.ar/pdf/ecobio/UAIS-EBIO-400-001%20-%20Biodiversidad%20y%20sustentabilidad.pdf" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div>  
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+          </div>
+          </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Consejos para el cuidado del medio ambiente </h1>
+        </div>
+<br>
+ <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	  <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image62','','imagenes/CUIDADO_DEL_MEDIO_AMBIENTE.jpg',1)"><img src="imagenes/22-DE-MAYO.jpg" width="30%" height="30%" id="Image62"></a>
+      </center> </div>
+	   </div>
+	   </div>
+
+<div>
+               <h2>Ahorro de energía en el hogar:
+
+Reemplazar los filtros de aire acondicionado en el hogar por lo menos una vez al mes
+Bajar el termostato del calentador de agua a 120
+Apagar las luces de las habitaciones que no se van a utilizar
+Ajustar la temperatura del refrigerador a 36º o 38º y el congelador de 0º a 5º
+Comprar electrodomésticos que dispongan de una certificación de ahorro energético
+Usar bombillas fluorescentes compactas para ahorrar energía
+<br>
+<center>
+ <img src="imagenes/energia.jpg" width="30%" height="30%">
+</center>
+<br>
+Reducir la toxicidad en el hogar:
+
+Eliminar el mercurio en la casa mediante la compra de elementos que no lo posean o lo hagan en una dosis muy baja
+Utilizar artículos de limpieza que no contengan un alto nivel de químicos peligrosos
+Revisar las etiquetas de los productos de limpieza, considerando el uso de bicarbonato de sosa, entre otros del mismo tipo
+Hacer la casa a prueba de roedores y evitar usar veneno de ratón, prefiriendo trampas en cualquier caso
+<center>
+  <img src="imagenes/reducir.jpg" width="30%" height="30%">
+</center>
+<br>
+Cuidado en la oficina:
+
+Hacer copias en ambas caras del papel
+Reutilizar sobres, carpetas y clips
+Usar un tablón de anuncios en vez de enviar correo a cada empleado
+Priorizar el uso de correo electrónico en vez de usar en correo convencional
+<center>
+  <img src="imagenes/oficina.jpg" width="30%" height="30%">
+</center>
+</h2>
+<div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://www.ugr.es/~pwlac/G25_39Policarpo_Sanchez_Yustos.html" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div> 
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Importancia del reciclaje </h1>
+        </div>
+<br>
+ <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	  <center>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image65','','imagenes/tres.jpg',1)"><img src="imagenes/recicla2.jpg" width="30%" height="30%" id="Image65"></a>
+      </center> </div>
+	   </div>
+	   </div>
+
+<div>
+               <h2>El reciclaje es utilizar materiales antiguos y convertirlos en nuevos productos, y cuyo objetivo es el de prevenir el absurdo desperdicio de materiales que acabarán contaminando u ocupando espacio.
+
+La importancia de reciclar se basa en los siguientes puntos:
+
+1 – Reciclando se consigue la reducción de nuevas materias primas, lo que ayuda a preservar el medio ambiente y los recursos naturales.
+
+2 – Se reduce el consumo energético que proviene de la obtención de materias primas. Reciclar siempre consume menos energía que obtener los productos directamente de la naturaleza. Al menos eso podría estimular a los empresarios a la hora de reutilizar los materiales.
+3 – Se reduce considerablemente la contaminación del agua, del aire y del suelo, ya que los residuos son reutilizados y no acaban en el mar, bajo tierra, o calcinados y esparcidos por una chimenea.
+4 – Se ahorra espacio en los vertederos. Al ahorrar en desechos para la eliminación en vertederos se consigue mayor espacio.
+
+Por todo ello, debemos destacar la importancia del reciclaje y que nuestro planeta lo necesita urgentemente ya que no damos abasto y no es sostenible la creación de nuevas materias primas teniendo tantas en los depósitos y vertederos. El reciclar es la mejor manera de mejorar el medio ambiente y para los seres humanos.
+<br>
+<center>
+  <img src="imagenes/reciclar.jpg" width="30%" height="30%">
+</center>
+<center>
+  <img src="imagenes/importancia.jpg" width="30%" height="30%">
+</center>
+</h2>
+<div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="http://www.inforeciclaje.com/que-es-reciclaje.php" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div> 
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>RECOMENDACIONES PARA CREAR CONCIENCIA ECOLÓGICA POR EL BIEN DE LA TIERRA</h1>
+          
+        </div>
+        <br>
+ <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+       <h1>Imagen</h1>
+       <div>
+       <br>
+	   </div>
+	   <div>
+	  <center>
+        
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','imagenes/CONCIENCIA_ECOLOGICA2.jpg',1)"><img src="imagenes/CONCIENCIA-ECOLOGICA.jpg" width="30%" height="30%" id="Image57"></a>
+</center> </div>
+	   </div>
+	   </div>
+
+<div>
+               <h2>1. Plan familiar:
+Antes de empezar en casa cualquier plan de reciclado que contribuye a proteger el planeta, Johns dice que los padres deben reunir a los hijos y explicarles por qué es importante cuidar los recursos naturales, no contaminar, no desperdiciar el agua ni la energía eléctrica, plantar árboles, etcétera.
+
+“Los niños tienen que saber que cuando se ejecutan en la casa actividades que protegen al planeta, además de estar cuidando a la Tierra, se ahorra dinero y se reduce el desorden y la producción de basura”, explica la experta en desarrollo juvenil y otros temas relacionados con la familia y el hogar.
+<br>
+<center>
+  <img src="imagenes/PLAN_FAMILIAR.jpg" width="30%" height="30%">
+</center>
+<br>
+2. Menos juguetes y más actividades de enseñanza cultural:
+El acostumbrar a los menores a recibir regalos que los expongan más a las bellas artes (música, arquitectura, danza, escultura, literatura y pintura) en lugar de juguetes no didácticos es otro de los hábitos que los hace más ecológicos.
+
+“Llenar a los menores de juguetes es algo que poco sirve en su formación”, asegura Johns. “Ellos sólo les ponen atención por un rato, cuando se cansan de ellos los pierden y la casa se llena de juguetes con los que no sabemos qué hacer. En cambio, el recuerdo de una obra de teatro, una película o la visita a un museo o parque de distracción les queda para siempre. A los menores les gusta el tiempo que se comparte en familia”.
+
+<center>
+  <img src="imagenes/Menos jugueteS.jpg" width="30%" height="30%">
+</center>
+<br>
+3. Ahorro de agua y energía:
+Este es uno hábito importante tanto para conservar los recursos naturales como para ahorrar dinero en el pago de la cuenta mensual del servicio.
+
+“Este hábito se enseña con el ejemplo, no con las palabras”, puntualiza Johns. “A los niños hay que enseñarles que la llave del agua no se deja abierta mientras una se lava los dientes, que hay que tomar baños de duchas cortos, que los platos se lavan acumulando el agua y no con el chorro corriendo”.
+
+También hay que enseñarles que deben apagar la luz al salir de los cuartos y hacer lo mismo con el televisor, si no lo están viendo.
+<center>
+  <img src="imagenes/Ahorro.jpg" width="30%" height="30%">
+</center>
+<br>
+4. Reciclaje:
+Asegúrate de que sepan que las latas y botellas de plástico o vidrio se pueden reciclar, así como los diarios, las revistas y las cajas de cartón.
+
+“El reciclaje es básico en la conservación de los recursos del planeta y en el cuidado de la Tierra. Éste debe ser una actividad asignada a los menores, a ellos hay que enseñarles cómo hacerlo y poner en algún lugar de la casa las cajas de cartón o los botes de plástico donde pueden seleccionar los artículos que se pueden reciclar”, explica la consejera.
+<center>
+  <img src="imagenes/RECICLAJE.jpg" width="30%" height="30%">
+</center>
+<br>
+5. Jardinería:
+La actividad de plantar las hierbas y los vegetales que se consumen en la alimentación diaria ayuda al cuidado de la Tierra, mientras que los menores se divierten y se comparte una actividad en familia. Se puede hacer en cualquier macetera de no contar en la casa con un patio o jardín.
+
+“Hasta el abono para el mismo huerto de verduras y hortalizas se puede preparar en el hogar. Con esto se ahorra también dinero y se es mucho más ecológico”, resalta Johns.
+<center>
+  <img src="imagenes/Jardineria.jpg" width="30%" height="30%">
+</center>
+<br>
+6. Motivar las manualidades con artículos reciclables:
+A los menores se les puede enseñar a que hagan sus propios regalos y tarjetas de cumpleaños y de Navidad. Esto los hace ser unas personas más conscientes del cuidado de la Tierra, a la vez que les estimula la creatividad.
+
+“Se les puede enseñar, por ejemplo, a que empaquen los regalos con periódico o con cualquier otro tipo de papel que pueden adornar con calcomanías o sellos de tinta”, explica Johns. “Ellos también pueden aprender a reciclar el papel de colores haciendo figuras u objetos con los que pueden jugar”.
+<center>
+  <img src="imagenes/Motivar.jpg" width="30%" height="30%">
+</center>
+<br>
+</h2>
+<div data-role="main" class="ui-content" align="center">
+       <div style="width:40%;">
+       <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+           <li class="ui-first-child ui-last-child">
+               <a href="https://www.ocio.net/estilo-de-vida/ecologismo/que-es-la-conciencia-ecologica/" data-role="button" id="beep">
+               <h2>Link para más información</h2>
+               </a>
+               </li>
+               </ul>
+               </div> 
+       </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+          <h1>Datos del Autor</h1>
+        </div>
+        <center><h1>Nombre del alumno:</h1></center>
+        <center><h1>Estefani Torres Bautista</h1></center>
+        <br>
+        <br>
+         <center><h1>Grupo:</h1></center>
+        <center><h1>"E"</h1></center>
+        <br>
+        <br>
+         <center><h1>Semestre:</h1></center>
+        <center><h1>CUARTO</h1></center>
+        <br>
+        <br>
+         <center><h1>Submódulo:</h1></center>
+        <center><h1>Desarrolla Aplicaciones Móviles</h1></center>
+        <br>
+        <br>
+         <center><h1>Nombre del Docente:</h1></center>
+        <center><h1>Lic. José Antonio Gómez Hernández</h1></center>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+          <h4>Aplicación Diez, ETB</h4>
+</div>
+</div>
+</div>
+        </body>
+</html>
+
+ 
+                                                       
+                                        
+                                                          
+                
+                     
+   
